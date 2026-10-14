@@ -5,6 +5,13 @@ function App() {
     <div>
       <header>
         <h1>Papelle personalizados</h1>
+
+        <nav>
+          <a href="#inicio">Início</a>
+          <a href="#produtos">Produtos</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#contato">Contato</a>
+        </nav>
       </header>
 
       <main>

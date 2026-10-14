@@ -7,6 +7,9 @@ header {
   padding: 24px 8%;
   background-color: #fffafc;
   border-bottom: 2px solid #fce5f1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 header h1 {
@@ -14,6 +17,24 @@ header h1 {
   color: #51464d;
   font-size: 28px;
   font-weight: 800;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  gap:24px;
+}
+
+header nav a {
+  color: #665761;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+header nav a:hover {
+  color: #df66a5;
 }
 
 main {
