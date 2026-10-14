@@ -1,0 +1,41 @@
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+header {
+  padding: 24px 8%;
+  background-color: #fffafc;
+  border-bottom: 2px solid #fce5f1;
+}
+
+header h1 {
+  margin: 0;
+  color: #51464d;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+main {
+  padding: 60px 8%;
+}
+
+main section {
+  padding: 60px 40px;
+  background-color: #ffe8f4;
+  border-radius: 24px;
+  text-align: center;
+}
+
+main h2{
+  margin: 0 0 16px;
+  color: #51464d;
+  font-size: 36px;
+}
+
+main p {
+  margin: 0;
+  color: #665761;
+  font-size: 18px;
+  line-height: 1.6;
+}
