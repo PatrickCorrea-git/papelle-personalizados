@@ -1,7 +1,16 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 #root {
   width: 100%;
   min-height: 100vh;
 }
+
+/* Cabeçalho */
 
 header {
   padding: 24px 8%;
@@ -10,7 +19,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 header h1 {
@@ -37,6 +45,8 @@ header nav a {
 header nav a:hover {
   color: #df66a5;
 }
+
+/* Conteúdo Principal */
 
 main {
   padding: 60px 8%;
@@ -91,18 +101,85 @@ main p {
   line-height: 1.5;
 }
 
+.produtos-lista{
+  display:flex;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+
+.categoria-card {
+  flex: 1;
+  min-width: 220px;
+  padding: 24px;
+  border: 2px solid #f3acd1;
+  border-radius: 18px;
+  text-align: center;
+}
+
+.categoria-card span {
+  display: block;
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.categoria-card h3 {
+  margin: 0 0 12px;
+  color: #51464d;
+  font-size: 18px;
+}
+
+.categoria-card p {
+  margin: 0;
+  color: #665761;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.card-rosa {
+    background-color: #F9DCE8;
+}
+
+.card-azul {
+   background-color: #DCECF8;
+}
+
+.card-verde {
+   background-color: #DDF1E5;
+}
+
+.card-pessego {
+   background-color: #FBE3D5;
+}
+
+.card-lilas {
+  background-color: #d6bbf8;
+}
+
+/* Responsividade */
+
 @media (max-width: 600px) {
   header nav{
     gap:12px;
   }
+
   header {
     row-gap: 16px;
     padding: 16px 8%;
+    flex-wrap: wrap;
   }
+
    main {
     padding: 40px 8%;
   }
+
   main section{
     padding: 30px 20px;
   }
+
+  main h2{
+    font-size: 28px;
+  }
+
 }
