@@ -26,12 +26,12 @@ header h1 {
   color: #df66a5;
   font-size: 30px;
   font-weight: 800;
-}
+} 
 
 header nav {
   display: flex;
   align-items: center;
-  gap:24px;
+  gap: 24px;
 }
 
 header nav a {
@@ -52,14 +52,14 @@ main {
   padding: 60px 8%;
 }
 
-main section {
+main > section {
   padding: 60px 40px;
   background-color: #ffe8f4;
   border-radius: 24px;
   text-align: center;
 }
 
-main h2{
+main h2 {
   margin: 0 0 16px;
   color: #51464d;
   font-size: 36px;
@@ -73,7 +73,7 @@ main p {
 }
 
 .beneficios {
-  display:flex;
+  display: flex;
   justify-content: space-between;
   gap: 24px;
   flex-wrap: wrap;
@@ -101,13 +101,25 @@ main p {
   line-height: 1.5;
 }
 
-.produtos-lista{
-  display:flex;
+/* Produtos */
+
+.produtos-lista {
+  display: flex;
   justify-content: space-between;
   gap: 24px;
   flex-wrap: wrap;
 }
 
+.produtos h2 {
+  color: #573c48;
+  margin-bottom: -4px;
+}
+
+.produtos p {
+  font-size: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
 
 .categoria-card {
   flex: 1 1 0;
@@ -139,19 +151,19 @@ main p {
 }
 
 .card-rosa {
-    background-color: #F9DCE8;
+  background-color: #F9DCE8;
 }
 
 .card-azul {
-   background-color: #DCECF8;
+  background-color: #DCECF8;
 }
 
 .card-verde {
-   background-color: #DDF1E5;
+  background-color: #DDF1E5;
 }
 
 .card-pessego {
-   background-color: #FBE3D5;
+  background-color: #FBE3D5;
 }
 
 .card-lilas {
@@ -164,6 +176,18 @@ main p {
   margin-top: 40px;
   padding: 40px 0;
   text-align: center;
+  background-color: #fff;
+}
+
+.destaques h2 {
+  color: #573c48;
+  margin-bottom: -4px;
+}
+
+.destaques p {
+  font-size: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 .destaques-lista {
@@ -197,24 +221,51 @@ main p {
 
 /* Etapas */
 
-.etapas-lista{
-  display:flex;
-  gap: 24px;
-  padding: 24px;
+.como-funciona {
+  background-color: #fff4f8;
+  padding: 40px 0;
+  text-align: center;
 }
 
-.etapa-card{
-    border-radius: 18px;
-    border: 1px solid #f3acd1;
-    background-color: #fff;
-    padding: 24px;
-    text-align: center;
+.como-funciona p {
+  font-size: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.como-funciona h2 {
+  color: #573c48;
+  margin-bottom: -4px;
+}
+
+.etapas-lista {
+  display: flex;
+  gap: 24px;
+  padding: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.etapa-card {
+  padding: 24px;
+  text-align: center;
+  flex: 1;
 }
 
 .etapa-card span {
   display: block;
   font-size: 32px;
   margin-bottom: 12px;
+}
+
+.etapa-card h3 {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.etapa-card p {
+  font-size: 12px;
+  line-height: 1.5;
 }
 
 /* Ícones das etapas */
@@ -231,15 +282,49 @@ main p {
   margin-bottom: 12px;
 }
 
-.etapa-icone svg{
+.etapa-icone svg {
+  color: #573c48;
+}
+
+.etapa-seta {
+  width: 30px;
+  height: 30px;
+  color: #573c48;
+  flex-shrink: 0;
+}
+
+/* divisoria decorativa */
+
+.divisoria-decorativa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
   color: #df66a5;
+  width: 100%;
+}
+
+.divisoria-decorativa::before {
+  content: "";
+  height: 1px;
+  background-color: #df66a5;
+  flex: 0 0 100px;
+  width: 100%;
+}
+
+.divisoria-decorativa::after {
+  content: "";
+  height: 1px;
+  width: 100px;
+  background-color: #df66a5;
+  flex: 0 0 100px;
 }
 
 /* Responsividade */
 
 @media (max-width: 600px) {
-  header nav{
-    gap:12px;
+  header nav {
+    gap: 12px;
   }
 
   header {
@@ -248,15 +333,15 @@ main p {
     flex-wrap: wrap;
   }
 
-   main {
+  main {
     padding: 40px 8%;
   }
 
-  main section{
+  main section {
     padding: 30px 20px;
   }
 
-  main h2{
+  main h2 {
     font-size: 28px;
   }
 

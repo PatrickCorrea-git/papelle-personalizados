@@ -1,4 +1,4 @@
-import { MessagesSquare, Palette, HeartHandshake, PackageCheck } from 'lucide-react';
+import { MessagesSquare, Palette, HeartHandshake, PackageCheck, ArrowRight, Heart } from 'lucide-react';
 import './App.css';
 
 function App() {
@@ -43,8 +43,13 @@ function App() {
         </section>
 
         <section className="produtos">
+
+          <div className='divisoria-decorativa'>
+            <Heart />
+          </div>
+
           <h2>Nossos Produtos</h2>
-          <p>Tudo o que você precisa para deixar sua festa ainda mais especial!</p>
+          <p>Tudo o que você precisa para deixar sua festa ainda mais especial! Com muito carinho e personalização.</p>
 
           <div className="produtos-lista">
             <article className="categoria-card card-rosa">
@@ -80,8 +85,12 @@ function App() {
         </section>
 
         <section className="destaques">
+          <div className='divisoria-decorativa'>
+            <Heart />
+          </div>
+
           <h2>Produtos em destaques</h2>
-          <p>Confira alguns dos nossos produtos mais populares e encantadores!</p>
+          <p>Confira alguns trabalhos que já encantaram nossos cliente.</p>
 
           <div className="destaques-lista">
             <article className="destaque-card">
@@ -112,47 +121,56 @@ function App() {
               <h3>Papelaria para eventos</h3>
             </article>
           </div>
+        </section>
 
-          <section className="como-funciona">
-            <h2>Como funciona?</h2>
-            <p>É muito simples! Basta escolher o produto que deseja, personalizar conforme sua preferência e acompanhar pelo WhatsApp.</p>
-            <div className="etapas-lista">
+        <section className="como-funciona">
+          <div className='divisoria-decorativa'>
+            <Heart />
+          </div>
 
-              <article className="etapa-card">
-                <div className="etapa-icone">
+          <h2>Como funciona?</h2>
+          <p>É muito simples! Basta escolher o produto que deseja, personalizar conforme sua preferência e acompanhar pelo WhatsApp.</p>
+
+          <div className="etapas-lista">
+            <article className="etapa-card">
+              <div className="etapa-icone">
                 <MessagesSquare size={32} />
-                </div>
-                <h3>1. Entre em contato</h3>
-                <p>Entre em contato conosco pelo WhatsApp ou Instagram para iniciar o processo de personalização.</p>
-              </article>
+              </div>
+              <h3>1. Entre em contato</h3>
+              <p>Nos chame pelo WhatsApp e conte o que você precisa.</p>
+            </article>
 
-              <article className="etapa-card">
-                <div className="etapa-icone">
-                  <Palette size={32} />
-                </div>
-                <h3>2. Forneça os detalhes</h3>
-                <p>Compartilhe suas ideias, preferências e qualquer detalhe específico que deseja incluir no produto.</p>
-              </article>
+            <ArrowRight className='etapa-seta' />
 
-              <article className="etapa-card">
-                <div className="etapa-icone">
-                  <HeartHandshake size={32} />
-                </div>
-                <h3>3. Receba o orçamento</h3>
-                <p>Forneceremos um orçamento personalizado para o seu pedido.</p>
-              </article>
+            <article className="etapa-card">
+              <div className="etapa-icone">
+                <Palette size={32} />
+              </div>
+              <h3>2. Forneça os detalhes</h3>
+              <p>Escolha o tema, modelo e quantidade.</p>
+            </article>
 
-              <article className="etapa-card">
-                <div className="etapa-icone">
-                  <PackageCheck size={32} />
-                </div>
-                <h3>4. Recebimento do pedido</h3>
-                <p>Assim que seu pedido estiver pronto, você poderá retirá-lo no local combinado ou solicitar um transporte por aplicativo.</p>
-              </article>
-            </div>
+            <ArrowRight className='etapa-seta' />
 
-            <p>Obs.: Os custos de entrega são de responsabilidade do cliente.</p>
-          </section>
+            <article className="etapa-card">
+              <div className="etapa-icone">
+                <HeartHandshake size={32} />
+              </div>
+              <h3>3. Receba o orçamento</h3>
+              <p>Escolha o tema, modelo e quantidade.</p>
+            </article>
+
+            <ArrowRight className='etapa-seta'/>
+
+            <article className="etapa-card">
+              <div className="etapa-icone">
+                <PackageCheck size={32} />
+              </div>
+              <h3>4. Recebimento do pedido</h3>
+              <p>Seu pedido fica pronto para ser retirado.</p>
+            </article>
+          </div>
+          <p>* A forma de entrega deve ser combinada pelo WhatsApp.</p>
         </section>
 
       </main>
