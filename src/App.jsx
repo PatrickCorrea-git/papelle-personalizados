@@ -16,11 +16,12 @@ function App() {
       </header>
 
       <main>
-        <section>
-          <h2>Do seu sonho ao detalhe que encanta!</h2>
+        <section className='banner'>
+          <h2>Transformando momentos em lembranças especiais</h2>
           <p>
-            Papelaria personalizada para momentos incríveis.
+           Na Papelle Personalizados, cada detalhe é feito com carinho para deixar sua festa ainda mais especial e inesquecível!
           </p>
+          <bottom className='bottom-wpp'>Solicite seu orçamento</bottom>
         </section>
 
         <section className="beneficios">
@@ -55,31 +56,31 @@ function App() {
             <article className="categoria-card card-rosa">
               <span>🎂</span>
               <h3>Topo de bolo</h3>
-              <p>topo de bolo personalizado</p>
+              <p>Detalhes personalizados para sua comemoração.</p>
             </article>
 
             <article className="categoria-card card-azul">
               <span>🎁</span>
               <h3>Caixas personalizadas</h3>
-              <p>caixas personalizadas para presentes</p>
+              <p>Embalagens criativas para momentos especiais.</p>
             </article>
 
             <article className="categoria-card card-verde">
               <span>🍬</span>
               <h3>Tubetes, latinhas e caixa acrílica</h3>
-              <p>tubetes, latinhas e caixa acrílica personalizadas</p>
+              <p>Lembrancinhas personalizadas para sua festa.</p>
             </article>
 
             <article className="categoria-card card-pessego">
               <span>✨</span>
               <h3>Adesivos em geral</h3>
-              <p>adesivos personalizados para diversos usos</p>
+              <p>Detalhes especiais para decorar e presentear.</p>
             </article>
 
             <article className="categoria-card card-lilas">
               <span>🎉</span>
               <h3>Totens de mesa</h3>
-              <p>totens de mesa personalizados para eventos</p>
+              <p>Decoração personalizada para sua comemoração.</p>
             </article>
           </div>
         </section>
@@ -172,8 +173,8 @@ function App() {
           </div>
           <p>* A forma de entrega deve ser combinada pelo WhatsApp.</p>
         </section>
-
       </main>
+
     </div>
   )
 };
