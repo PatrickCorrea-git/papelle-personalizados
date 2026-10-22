@@ -1,182 +1,38 @@
-import { MessagesSquare, Palette, HeartHandshake, PackageCheck, ArrowRight, Heart } from 'lucide-react';
-import './App.css';
+import './App.css'
+import { FaWhatsapp } from 'react-icons/fa';
+import {
+    Heart,
+    MessagesSquare,
+    ArrowRight,
+    Palette,
+    HeartHandshake,
+    PackageCheck
+} from 'lucide-react';
 
 function App() {
-  return (
-    <div>
-      <header>
-        <h1>Papelle personalizados</h1>
+    return (
+        <div>
 
-        <nav>
-          <a href="#inicio">Início</a>
-          <a href="#produtos">Produtos</a>
-          <a href="#sobre">Sobre</a>
-          <a href="#contato">Contato</a>
-        </nav>
-      </header>
+            <header>
+                <div className='logo'>
+                    <img src='/coracao-rosa.png' alt='' className='logo-coracao'></img>
 
-      <main>
-        <section className='banner'>
-          <h2>Transformando momentos em lembranças especiais</h2>
-          <p>
-           Na Papelle Personalizados, cada detalhe é feito com carinho para deixar sua festa ainda mais especial e inesquecível!
-          </p>
-          <bottom className='bottom-wpp'>Solicite seu orçamento</bottom>
-        </section>
+                    <h1>Papelle</h1>
+                    <span>PERSONALIZADOS</span>
+                </div>
 
-        <section className="beneficios">
+                <nav>
+                    <a href='#inicio' className='ativo'>Início</a>
+                    <a href='#produtos'>Produtos</a>
+                    <a href='#sobre'>Sobre</a>
+                    <a href='#contato'>Contato</a>
+                </nav>
 
-          <article>
-            <h3>🎨 Personalização do seu jeito</h3>
-            <p>Detalhes pensados para combinar com sua comemoração.</p>
-          </article>
+                <a href='#contato' className='botao-contato'> <FaWhatsapp size={18}/> Fale Conosco</a>
+           
+            </header>
+        </div>
+    )
+}
 
-          <article>
-            <h3>💖 Feitos com carinho</h3>
-            <p>Cada detalhe preparado com atenção e cuidado.</p>
-          </article>
-
-          <article>
-            <h3>🎉 Momentos especiais</h3>
-            <p>Papelaria personalizada para celebrar suas melhores memórias.</p>
-          </article>
-
-        </section>
-
-        <section className="produtos">
-
-          <div className='divisoria-decorativa'>
-            <Heart />
-          </div>
-
-          <h2>Nossos Produtos</h2>
-          <p>Tudo o que você precisa para deixar sua festa ainda mais especial! Com muito carinho e personalização.</p>
-
-          <div className="produtos-lista">
-            <article className="categoria-card card-rosa">
-              <span>🎂</span>
-              <h3>Topo de bolo</h3>
-              <p>Detalhes personalizados para sua comemoração.</p>
-            </article>
-
-            <article className="categoria-card card-azul">
-              <span>🎁</span>
-              <h3>Caixas personalizadas</h3>
-              <p>Embalagens criativas para momentos especiais.</p>
-            </article>
-
-            <article className="categoria-card card-verde">
-              <span>🍬</span>
-              <h3>Tubetes, latinhas e caixa acrílica</h3>
-              <p>Lembrancinhas personalizadas para sua festa.</p>
-            </article>
-
-            <article className="categoria-card card-pessego">
-              <span>✨</span>
-              <h3>Adesivos em geral</h3>
-              <p>Detalhes especiais para decorar e presentear.</p>
-            </article>
-
-            <article className="categoria-card card-lilas">
-              <span>🎉</span>
-              <h3>Totens de mesa</h3>
-              <p>Decoração personalizada para sua comemoração.</p>
-            </article>
-          </div>
-        </section>
-
-        <section className="destaques">
-          <div className='divisoria-decorativa'>
-            <Heart />
-          </div>
-
-          <h2>Produtos em destaques</h2>
-          <p>Confira alguns trabalhos que já encantaram nossos cliente.</p>
-
-          <div className="destaques-lista">
-            <article className="destaque-card">
-              <div>
-                <span className="destaque-imagem">Foto do produto 1</span>
-              </div>
-              <h3>Topo de bolo personalizado</h3>
-            </article>
-
-            <article className="destaque-card">
-              <div>
-                <span className="destaque-imagem">Foto do produto 2</span>
-              </div>
-              <h3>Caixa personalizada</h3>
-            </article>
-
-            <article className="destaque-card">
-              <div>
-                <span className="destaque-imagem">Foto do produto 3</span>
-              </div>
-              <h3>Lembrancinhas personalizadas</h3>
-            </article>
-
-            <article className="destaque-card">
-              <div>
-                <span className="destaque-imagem">Foto do produto 4</span>
-              </div>
-              <h3>Papelaria para eventos</h3>
-            </article>
-          </div>
-        </section>
-
-        <section className="como-funciona">
-          <div className='divisoria-decorativa'>
-            <Heart />
-          </div>
-
-          <h2>Como funciona?</h2>
-          <p>É muito simples! Basta escolher o produto que deseja, personalizar conforme sua preferência e acompanhar pelo WhatsApp.</p>
-
-          <div className="etapas-lista">
-            <article className="etapa-card">
-              <div className="etapa-icone">
-                <MessagesSquare size={32} />
-              </div>
-              <h3>1. Entre em contato</h3>
-              <p>Nos chame pelo WhatsApp e conte o que você precisa.</p>
-            </article>
-
-            <ArrowRight className='etapa-seta' />
-
-            <article className="etapa-card">
-              <div className="etapa-icone">
-                <Palette size={32} />
-              </div>
-              <h3>2. Forneça os detalhes</h3>
-              <p>Escolha o tema, modelo e quantidade.</p>
-            </article>
-
-            <ArrowRight className='etapa-seta' />
-
-            <article className="etapa-card">
-              <div className="etapa-icone">
-                <HeartHandshake size={32} />
-              </div>
-              <h3>3. Receba o orçamento</h3>
-              <p>Escolha o tema, modelo e quantidade.</p>
-            </article>
-
-            <ArrowRight className='etapa-seta'/>
-
-            <article className="etapa-card">
-              <div className="etapa-icone">
-                <PackageCheck size={32} />
-              </div>
-              <h3>4. Recebimento do pedido</h3>
-              <p>Seu pedido fica pronto para ser retirado.</p>
-            </article>
-          </div>
-          <p>* A forma de entrega deve ser combinada pelo WhatsApp.</p>
-        </section>
-      </main>
-
-    </div>
-  )
-};
-
-export default App;
+export default App; 
