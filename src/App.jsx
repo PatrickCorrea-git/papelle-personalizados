@@ -28,14 +28,14 @@ function App() {
                     <a href='#contato'>Contato</a>
                 </nav>
 
-                <a href='#contato' className='botao-contato'> <FaWhatsapp size={18}/> Fale Conosco</a>
+                <a href='#contato' className='botao-contato'> <FaWhatsapp size={18} /> Fale Conosco</a>
             </header>
 
             <section className='banner' id='inicio'>
                 <div className='banner-conteudo'>
                     <h2>Transformando momentos em lembranças especiais</h2>
                     <p>Na Papelle Personalizados, cada detalhe é feito com carinho para deixar sua festa ainda mais especial e inesquecível!</p>
-                    <a href='#contato' className='banner-botao'><FaWhatsapp size={22}/> Solicite seu orçamento </a>
+                    <a href='#contato' className='banner-botao'><FaWhatsapp size={22} /> Solicite seu orçamento </a>
                 </div>
 
                 <div className='banner-imagem'>
@@ -44,7 +44,51 @@ function App() {
                     <span className='banner-coracao banner-coracao-1'>♡</span>
                     <span className='banner-coracao banner-coracao-2'>♡</span>
                 </div>
-            </section>  
+            </section>
+
+            <section className='produtos' id='produtos'>
+                <div className='divisoria-decorativa'><Heart /></div>
+
+                <h2>Nossos Produtos</h2>
+                <p className='produtos-descricao'>Tudo o que você precisa para tornar sua festa ainda mais especial, <br /> com muito carinho e personalização.</p>
+
+                <div className='produtos-lista'>
+                    <article className='categoria-card card-rosa'>
+                        <span>🎂</span>
+                        <h3>Topo de bolo</h3>
+                        <p>Topo de bolo personalizado</p>
+                        <span className="categoria-seta">→</span>
+                    </article>
+
+                    <article className='categoria-card card-azul'>
+                        <span>🎁</span>
+                        <h3>Caixas personalizadas</h3>
+                        <p>Caixas em diversos modelos e temas</p>
+                        <span className="categoria-seta">→</span>
+                    </article>
+
+                    <article className='categoria-card card-amarelo'>
+                        <span>🍬</span>
+                        <h3>Tubetes e latinhas</h3>
+                        <p>Lembrancinhas criativas e cheias de charme</p>
+                        <span className="categoria-seta">→</span>
+                    </article>
+
+                    <article className='categoria-card card-verde'>
+                        <span>♡</span>
+                        <h3>Adesivos em geral</h3>
+                        <p>Personalize com seu tema favorito</p>
+                        <span className="categoria-seta">→</span>
+                    </article>
+
+                    <article className='categoria-card card-lilas'>
+                    <span>🎨</span>
+                    <h3>Totens de mesa</h3>
+                    <p>Deixe sua decoração ainda mais completa</p>
+                    <span className="categoria-seta">→</span>
+                    </article>
+                </div>
+            </section>
         </div>
     )
 }
