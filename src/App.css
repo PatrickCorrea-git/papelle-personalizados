@@ -199,7 +199,120 @@ header nav a.ativo::after {
     font-weight: 600;
 }
 
-/* responsividade */
+/* produtos */
+.produtos {
+    text-align: center;
+    padding: 24px 6% 30px;
+    background-color: #fff9fb;
+}
+
+.divisoria-decorativa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 6px;
+    color: #e85c94;
+}
+
+.divisoria-decorativa::before, .divisoria-decorativa::after {
+    content: '';
+    width: 58px;
+    height: 2px;
+    background-color: #f3a4c2;
+}
+
+.divisoria-decorativa svg {
+    width: 20px;
+    height: 20px;
+}
+
+.produtos h2 {
+    margin-bottom: 4px;
+    color: #74203f;
+    font-size: 29px;
+}
+
+.produtos-descricao{
+    margin-bottom: 20px;
+    color: #51434b;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.produtos-lista {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 12px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.categoria-card {
+    min-width: 0;
+    min-height: 210px;
+    padding: 18px 12px 12px;
+    border: none;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.categoria-card.card-rosa {
+    background-color: #fbdfe9;
+}
+
+.categoria-card.card-azul {
+    background-color: #d9f0fb;
+}
+
+.categoria-card.card-amarelo {
+    background-color: #fff0bf;
+}
+
+.categoria-card.card-verde {
+    background-color: #d9f4df;
+}
+
+.categoria-card.card-lilas {
+    background-color: #e9e0fb;
+}
+
+.categoria-card > span:first-child {
+    margin-bottom: 12px;
+    color: #c34f88;
+    font-size: 43px;
+    line-height: 1.2;
+}
+
+.categoria-card h3 {
+    max-width: 150px;
+    margin-bottom: 10px;
+    color: #45333f;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.categoria-card p {
+    max-width: 155px;
+    margin-bottom: 12px;
+    color: #51434b;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.categoria-card .categoria-seta {
+    margin-top: auto;
+    color: #74203f;
+    font-size: 25px;
+    line-height: 1;
+}
+
+
+/* responsividade banner */
 @media (max-width: 700px) {
     .banner {
         text-align: center;
@@ -231,4 +344,3 @@ header nav a.ativo::after {
     }
 
 }
-
