@@ -311,6 +311,66 @@ header nav a.ativo::after {
     line-height: 1;
 }
 
+/* produtos destaques */
+.destaques {
+    padding: 28px 6% 36px;
+    text-align: center;
+    background-color: #fce8ef;
+}
+
+.destaques h3{
+    margin-bottom: 5px;
+    color: #74203f;
+    font-size: 29px;
+}
+
+.destaques-descricao {
+    margin-bottom: 20px;
+    color: #51434b;
+    font-size: 13px;
+}
+
+.destaques-lista {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    min-width: 0;
+    gap: 16px;
+}
+
+.destaque-card {
+    min-width: 0;
+    text-align: center;
+}
+
+.destaque-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover; /* Faz a imagem preencher o espaço sem distorcer, cortando o excesso */
+    border-radius: 10px;
+}
+
+.destaque-card p {
+    margin-top: 9px;
+    color: #45333f;
+    font-size: 13px;
+}
+
+/* responsividade cabeçalho */
+
+@media (max-width: 600px) {
+    header {
+
+        gap: 12px;
+        padding: 12px 5.5%;
+        height: auto;
+    }
+
+    .botao-contato{
+        display: none;
+    }
+}
+
 
 /* responsividade banner */
 @media (max-width: 700px) {
@@ -343,4 +403,12 @@ header nav a.ativo::after {
         height: 260px;
     }
 
+}
+
+/* responsividade destaques */
+@media (max-width: 600px) {
+    .destaques-lista {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px 12px;
+    }
 }

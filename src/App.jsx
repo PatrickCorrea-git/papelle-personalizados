@@ -89,6 +89,36 @@ function App() {
                     </article>
                 </div>
             </section>
+
+            <section className='destaques'>
+                <div className='divisoria-decorativa'><Heart /></div>
+
+                <h3 className='produtos-destaque'>Produtos em destaques</h3>
+                <p className='destaques-descricao'>Confira alguns trabalhos que já encantaram nossos clientes!</p>
+
+                <div className='destaques-lista'>
+                    <article className='destaque-card'>
+                        <img src="" alt="topo de bolo personalizado" />
+                        <p>topo de bolo personalizado</p>
+                    </article>
+
+                    <article className='destaque-card'>
+                        <img src="" alt="Caixas personalizadas" />
+                        <p>Caixas personalizadas</p>
+                    </article>
+
+                    <article className='destaque-card'>
+                        <img src="" alt="painel de mesa" />
+                        <p>Painel de mesa</p>
+                    </article>
+
+                    <article className='destaque-card'>
+                        <img src="" alt="Centro de mesa" />
+                        <p>Centro de mesa</p>
+                    </article>
+
+                </div>
+            </section>
         </div>
     )
 }
