@@ -243,7 +243,7 @@ header nav a.ativo::after {
 .produtos-lista {
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));
-    gap: 12px;
+    gap: 16px;
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
@@ -252,7 +252,7 @@ header nav a.ativo::after {
 .categoria-card {
     min-width: 0;
     min-height: 210px;
-    padding: 18px 12px 12px;
+    padding: 18px 8px 12px;
     border: none;
     border-radius: 12px;
     display: flex;
@@ -289,7 +289,8 @@ header nav a.ativo::after {
 }
 
 .categoria-card h3 {
-    max-width: 150px;
+    width: 100%;
+    overflow-wrap: anywhere;
     margin-bottom: 10px;
     color: #45333f;
     font-size: 14px;
@@ -315,7 +316,7 @@ header nav a.ativo::after {
 .destaques {
     padding: 28px 6% 36px;
     text-align: center;
-    background-color: #fce8ef;
+    background-color: #fff9fb;
 }
 
 .destaques h3{
@@ -354,10 +355,72 @@ header nav a.ativo::after {
     margin-top: 9px;
     color: #45333f;
     font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.como-funciona {
+    padding: 28px 5% 36px;
+    background-color: #fff4f8;
+    text-align: center;
+}
+
+.como-funciona h2 {
+    margin-bottom: 5px;
+    color: #74203f;
+    font-size: 29px;
+}
+
+.como-descricao {
+    margin-bottom: 22px;
+    color: #51434b;
+    font-size: 13px;
+}
+
+.etapas-lista {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.etapa-card {
+    flex: 1;
+    min-width: 0;
+    padding: 12px 5px;
+    text-align: center;
+}
+
+.etapa-icone {
+    width: 62px;
+    height: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 12px;
+    background-color: #fce1ec;
+    color: #74203f;
+    border-radius: 50%;
+}
+
+.etapa-card h3 {
+    font-size: 13px;
+    color: #45333f;
+}
+
+.etapa-card p {
+    font-size: 12px;
+    color: #665761;
+    line-height: 1.5;
+    margin-top: 6px;
+}
+
+.etapa-seta {
+    width: 22px;
+    color: #df66a5;
+    flex-shrink: 0; /* permite que o item não encolha*/
 }
 
 /* responsividade cabeçalho */
-
 @media (max-width: 600px) {
     header {
 
@@ -370,7 +433,6 @@ header nav a.ativo::after {
         display: none;
     }
 }
-
 
 /* responsividade banner */
 @media (max-width: 700px) {
@@ -405,10 +467,37 @@ header nav a.ativo::after {
 
 }
 
+/* responsividade meus produtos */
+@media (max-width:600px) {
+    .produtos-lista {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 16px 12px;
+    }
+}
+
 /* responsividade destaques */
 @media (max-width: 600px) {
     .destaques-lista {
         grid-template-columns: repeat(2, 1fr);
         gap: 18px 12px;
+    }
+}
+
+/* responsividade como funciona */
+@media (max-width: 600px) {
+    
+    .etapas-lista{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 8px;
+    }
+
+    .etapa-card {
+        width: 100%;
+    }
+
+    .etapa-seta{
+    transform: rotate(90deg);
+    margin: 0 auto;
     }
 }

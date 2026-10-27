@@ -82,10 +82,10 @@ function App() {
                     </article>
 
                     <article className='categoria-card card-lilas'>
-                    <span>🎨</span>
-                    <h3>Totens de mesa</h3>
-                    <p>Deixe sua decoração ainda mais completa</p>
-                    <span className="categoria-seta">→</span>
+                        <span>🎨</span>
+                        <h3>Totens de mesa</h3>
+                        <p>Deixe sua decoração ainda mais completa</p>
+                        <span className="categoria-seta">→</span>
                     </article>
                 </div>
             </section>
@@ -116,7 +116,62 @@ function App() {
                         <img src="" alt="Centro de mesa" />
                         <p>Centro de mesa</p>
                     </article>
+                </div>
+            </section>
 
+            <section className='como-funciona' id='sobre'>
+                <div className='divisoria-decorativa'><Heart /></div>
+
+                <h2>Como funciona?</h2>
+                <p className='como-descricao'>Passo a passo do processo do pedido a entrega!</p>
+
+                <div className='etapas-lista'>
+
+                    <article className='etapa-card'>
+                        <div className='etapa-icone'><MessagesSquare /></div>
+                        <h3>Entre em contato</h3>
+                        <p>Conte pra gente como você imagina sua festa.</p>
+                    </article>
+
+                    <ArrowRight className='etapa-seta' />
+
+                    <article className='etapa-card'>
+                        <div className='etapa-icone'><Palette /></div>
+                        <h3>Personalize</h3>
+                        <p>Escolha o tema e os detalhes dos seus produtos.</p>
+                    </article>
+
+                    <ArrowRight className='etapa-seta' />
+
+                    <article className='etapa-card'>
+                        <div className='etapa-icone'><HeartHandshake /></div>
+                        <h3>Produção</h3>
+                        <p>Preparamos seu pedido com carinho e atenção.</p>
+                    </article>
+
+                    <ArrowRight className='etapa-seta' />
+
+                    <article className='etapa-card'>
+                        <div className='etapa-icone'><PackageCheck /></div>
+                        <h3>Retire seu pedido</h3>
+                        <p>Seu pedido fica pronto para retirada no local ou entrega de sua preferência.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section className='aviso-contato' id='contato'>
+                <div className='aviso-conteudo'>
+                    <h2>♡ Um detalhe importante!</h2>
+                    <p> No momento, nossos pedidos são disponibilizados
+                        <strong> somente para retirada no local.</strong>
+                        Não realizamos entregas.
+                    </p>
+                </div>
+
+                <div className='aviso-acao'>
+                    <h3>Vamos criar algo especial?</h3>
+                    <p>Venha solicitar aqui o seu orçamento! </p>
+                    <a href='https://wa.me/55SEUNUMERO' target='_blank' rel='noreferrer'> <FaWhatsapp /> Fale conosco</a>
                 </div>
             </section>
         </div>
